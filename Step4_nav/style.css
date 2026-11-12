@@ -1,0 +1,116 @@
+/* 1. Réinitialiser les marges */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 2. Le conteneur principal */
+#container {
+    background-color: red;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    border: 1px solid black;
+    max-width: 1100px;
+}
+
+/* 3. Le footer */
+footer {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+/* Les sections main-nav et showcase */
+.main-nav,
+.showcase {
+    background-color: #CCCCCC;
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+}
+
+/* Adapter automatiquement la hauteur */
+#container {
+    height: auto;
+}
+
+
+/* Les différentes sections */
+.home-cards,
+.ruban,
+.follow,
+.links,
+.sub-footer,
+#bigData-intro {
+    background-color: #d3eaac;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+
+/* Style général de la page */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Barre de navigation */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+    background-color: white;
+    border: none;
+}
+
+/* Logo */
+.logo {
+    width: 110px;
+}
+
+/* Menu principal et menu de droite */
+.main-menu,
+.right-menu {
+    display: flex;
+    list-style: none;
+}
+
+/* Menu principal */
+.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Espacement entre les éléments */
+.main-menu li,
+.right-menu li {
+    margin-right: 10px;
+}
+
+/* Liens */
+.main-nav a {
+    color: #262626;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+/* Effet au survol */
+.main-nav a:hover {
+    border-bottom: 2px solid #262626;
+}
+
